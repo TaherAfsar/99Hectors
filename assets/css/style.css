@@ -82,18 +82,20 @@ img {
 # Header
 --------------------------------------------------------------*/
 .site-header {
+  color: #ffffff;
   min-height: 50px;
 }
 
 @media (max-width: 991.98px) {
   .site-header .navbar-collapse {
+    color: #ffffff;
     margin-top: 20px;
   }
 }
 
 @media (max-width: 991.98px) {
   .site-header .navbar-collapse {
-    background-color: #F5F6F8;
+    background-color: #060709;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 20px;
@@ -102,6 +104,8 @@ img {
 }
 
 .site-header .navbar {
+  color: #ffffff;
+  background-color: #060709;
   padding-top: 20px;
   padding-bottom: 20px;
 }
@@ -119,11 +123,13 @@ img {
 
 @media (max-width: 991.98px) {
   .site-header .navbar .navbar-nav {
-    background-color: #F5F6F8;
+    color: #ffffff;
+    background-color: #060709;
   }
 }
 
 .site-header .navbar .nav-item {
+  color: #ffffff;
   font-family: "Poppins";
   color: #000000;
   font-size: 1rem;
@@ -131,28 +137,39 @@ img {
   margin-right: 9px;
   margin-left: 9px;
 }
-
-.site-header .navbar .nav-item.active {
-  color: #6246F9;
+.text-cornflower-blue {
+  color: #212529 !important;
 }
-
+.site-header .navbar .nav-item.active {
+  color: #D4AF37;
+}
+.text-ebony-clay {
+  color: #ffffff !important;
+}
+a.nav-link{
+  color: #ffffff !important;
+}
 @media (min-width: 992px) {
   .site-header .navbar .nav-item .nav-link {
+    color: #ffffff;
     position: relative;
   }
-  .site-header .navbar .nav-item .nav-link.active, .site-header .navbar .nav-item .nav-link:hover {
-    color: #FF5E4D;
+  .site-header .navbar .nav-item .nav-link.active .site-header .navbar .nav-item .nav-link:hover {
+    color: #D4AF37;
   }
 }
 
 .site-header .navbar .nav-item .dropdown-menu {
+  color: #ffffff !important;
+  background-color: #060709;
   font-size: 1rem;
   font-weight: 400px;
 }
 
 @media (max-width: 991.98px) {
   .site-header .navbar .nav-item .dropdown-menu {
-    border: solid 1px #ffffff;
+    color: #ffffff !important;
+    border: solid 1px #060709;
     border-radius: 0px;
   }
 }
@@ -162,7 +179,8 @@ img {
 }
 
 .site-header .navbar-toggler {
-  background-color: #F5F6F8;
+  background-color: #060709;
+  color: #ffffff;
 }
 
 .btn-outline-black-header {
@@ -175,7 +193,7 @@ img {
 }
 
 .nav-pills .nav-link.active {
-  color: #ffffff;
+  color: #ffffff;;
 }
 
 .navbar .nav-modules {
@@ -193,7 +211,7 @@ img {
   border-radius: 0;
   padding: 30px 0 30px 30px;
   border-right: none;
-  background: #ffffff;
+  background: #060709;
   width: 100%;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
@@ -209,7 +227,7 @@ img {
 
 .navbar .nav-modules .nav-item-search .navbar-search-bar .btn {
   border-left: none;
-  background: #ffffff;
+  background: #060709;
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border-top-right-radius: 50px;
@@ -233,13 +251,13 @@ img {
   font-size: 1.125rem;
   font-weight: bold;
   font-family: "Poppins";
-  color: #6246F9;
+  color: #D4AF37;
 }
 
 .navbar .nav-modules .nav-item-social-nav:not(:last-child) {
   margin-right: 1.2rem;
   padding-right: 1.2rem;
-  border-right: solid 1px #dee2e6;
+  border-right: solid 1px #060709;
 }
 
 .navbar .nav-modules .nav-item-social-nav a:not(:last-child) {
@@ -628,7 +646,7 @@ p.has-drop-cap:not(:focus):first-letter {
 }
 
 .property-block .property-item .content-price {
-  color: #6246F9;
+  color: #D4AF37;
   font-size: 1.125rem;
   font-weight: bold;
   margin-bottom: 15px;
@@ -671,7 +689,7 @@ p.has-drop-cap:not(:focus):first-letter {
   font-size: 1rem;
   font-family: "Poppins";
   font-weight: bold;
-  color: #6246F9;
+  color: #D4AF37;
   margin-bottom: 20px;
 }
 
@@ -1631,22 +1649,22 @@ body.has-no-comments .comment-respond {
 }
 
 .seventy-five-percent-bg {
-  background-color: transparent;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #6246F9), to(#ffffff));
-  background: -webkit-linear-gradient(top, #6246F9 100%, #ffffff 100%);
-  background: linear-gradient(180deg, #6246F9 100%, #ffffff 100%);
+
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(100%, #D4AF37), to(#000000));
+  background: -webkit-linear-gradient(top, #d69e42 100%, #ffffff 100%);
+  background: linear-gradient(180deg, #d69e42 100%, #ffffff 100%);
 }
 
 @media (min-width: 992px) {
   .seventy-five-percent-bg {
-    background: -webkit-gradient(linear, left top, right top, color-stop(70%, #6246F9), color-stop(70%, #ffffff));
-    background: -webkit-linear-gradient(left, #6246F9 70%, #ffffff 70%);
-    background: linear-gradient(90deg, #6246F9 70%, #ffffff 70%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(70%, #D4AF37), color-stop(70%, #ffffff));
+    background: -webkit-linear-gradient(left, #d69e42 70%, #ffffff 70%);
+    background: linear-gradient(90deg, #d69e42 70%, #ffffff 70%);
   }
 }
 
 .seventy-five {
-  background-color: transparent;
+
   background: -webkit-gradient(linear, left top, left bottom, color-stop(70%, #FEF6E9), color-stop(70%, #ffffff));
   background: -webkit-linear-gradient(top, #FEF6E9 70%, #ffffff 70%);
   background: linear-gradient(180deg, #FEF6E9 70%, #ffffff 70%);
