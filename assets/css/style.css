@@ -143,6 +143,17 @@ img {
 .site-header .navbar .nav-item.active {
   color: #d4af37;
 }
+
+a.nav-link:hover {
+  color: #d4af37 !important;
+}
+a.nav-link.active {
+  color: #d4af37 !important;
+}
+a.dropdown-item.active{
+  color: #d4af37 !important;
+}
+
 .text-ebony-clay {
   color: #ffffff !important;
 }
@@ -485,7 +496,7 @@ a.nav-link {
 }
 
 .entry-footer .entry-author-container {
-  border-top: solid 1px #d4af37;
+  border-top: solid 1px #f06399;
   margin-top: 2.5rem;
   padding-top: 2.5rem;
 }
