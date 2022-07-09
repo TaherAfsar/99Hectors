@@ -384,6 +384,7 @@ a.nav-link {
 }
 
 .site-footer .footer-bottom-area a:hover {
+  background-color: #000;
   color: #f06399;
 }
 
