@@ -385,7 +385,15 @@ a.nav-link {
 }
 
 .site-footer .footer-bottom-area a:hover {
+<<<<<<< HEAD
   color: #d69e42;
+=======
+
+  color: #d4af37;
+
+  background-color: #000;
+  
+>>>>>>> master
 }
 
 @media (min-width: 992px) {
