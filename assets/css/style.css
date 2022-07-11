@@ -383,7 +383,7 @@ a.nav-link {
   width: 1.25em;
 }
 
-.site-footer .footer-bottom-area a:hover {
+.site-footer .footer-bottom-area a:hover {  
   background-color: #000;
   color: #f06399;
 }
@@ -2016,4 +2016,11 @@ body.has-no-comments .comment-respond {
 .iframe-video-icon a {
   color: #ffffff;
   font-size: 100px;
+}
+.contact-us-btn:hover{
+  background-color: #000000;
+}
+
+.call-us-now-btn:hover{
+  background-color: #000000;
 }
