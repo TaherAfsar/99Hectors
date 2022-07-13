@@ -2023,8 +2023,13 @@ body.has-no-comments .comment-respond {
 }
 .contact-us-btn:hover{
   background-color: #000000;
+  border: none;
 }
-
 .call-us-now-btn:hover{
+  background-color: #fff;
+  color: #000;
+}
+.call-us-now-btn{
   background-color: #000000;
+  border: none ;
 }
