@@ -1,6 +1,7 @@
 /*!
 Theme Name: Jagga
-Theme URI: http://www.energeticthemes.com/themes/jagga
+Theme URI: http://www
+nergeticthemes.com/themes/jagga
 Author: EnergeticThemes
 Author URI: https://amjadalii.com
 Description: A Template for Architectural Interior Design company website.
@@ -360,10 +361,12 @@ a.nav-link {
   font-weight: 500;
 }
 
-.site-footer .footer-widgets .footer-widget a {
-  color: #555c62;
+.site-footer .footer-widgets .footer-widget a:active {
+  color: #d4af37;
 }
-
+.site-footer .footer-widgets .footer-widget a {
+  color: #ffffff;
+}
 .site-footer .footer-widgets .footer-widget a:hover {
   color: #d69e42;
 }
@@ -2037,4 +2040,10 @@ body.has-no-comments .comment-respond {
 .call-us-now-btn{
   background-color: #000000;
   border: none ;
+}
+.footer-text-link a:hover{
+  color:  #e7bc5c;
+}
+.footer-text-link a:active{
+  color:  #e7bc5c;
 }
