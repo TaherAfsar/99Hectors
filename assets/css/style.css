@@ -388,15 +388,11 @@ a.nav-link {
 }
 
 .site-footer .footer-bottom-area a:hover {
-<<<<<<< HEAD
-  color: #d69e42;
-=======
 
   color: #d4af37;
 
   background-color: #000;
   
->>>>>>> master
 }
 
 @media (min-width: 992px) {
@@ -2046,4 +2042,105 @@ body.has-no-comments .comment-respond {
 }
 .footer-text-link a:active{
   color:  #e7bc5c;
+}
+/* admin panel */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #c2b280;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  
+}
+@media screen and (min-width: 701px) {
+  .sidebar a {
+  margin-top: 40%;
+  }
+}
+@media screen and (max-width: 701px) {
+  .sidebar{
+      width: 100%;
+  }
+}
+/* Sidebar links */
+.sidebar a {
+
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.sidebar a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+
+
+/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+.table_th{
+  padding: 20px;
+  font-size: 20px;
+}
+.table_td{
+  padding: 20px;
+  background-color: skyblue;
+}
+.propertytable{
+  width: 70%;
+  border: 1px solid black;
+  text-align: center;
+
+}
+.propertytable td , th{
+  border: 1px solid black;
+ 
+}
+.blogtable{
+width: 70%;
+border: 1px solid black;
+text-align: center;
+
+}
+.blogtable td , th{
+border: 1px solid black;
+
+}
+.content{
+  margin-top: 30px;
+  align-items: center;
 }
