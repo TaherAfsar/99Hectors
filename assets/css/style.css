@@ -1,6 +1,7 @@
 /*!
 Theme Name: Jagga
-Theme URI: http://www.energeticthemes.com/themes/jagga
+Theme URI: http://www
+nergeticthemes.com/themes/jagga
 Author: EnergeticThemes
 Author URI: https://amjadalii.com
 Description: A Template for Architectural Interior Design company website.
@@ -141,29 +142,25 @@ img {
   color: #212529 !important;
 }
 .site-header .navbar .nav-item.active {
-  color: #d4af37;
+  color: #d69e42;
 }
+
+a.nav-link:hover {
+  color: #d89c44!important;
+}
+a.nav-link.active {
+  color: #d89c44!important;
+}
+a.dropdown-item.active{
+  color: #d89c44!important;
+}
+
 .text-ebony-clay {
   color: #ffffff !important;
 }
+
 a.nav-link {
   color: #ffffff !important;
-}
-@media (min-width: 992px) {
-  .site-header .navbar .nav-item .nav-link {
-    color: #ffffff;
-    position: relative;
-  }
-  .site-header
-    .navbar
-    .nav-item
-    .nav-link.active
-    .site-header
-    .navbar
-    .nav-item
-    .nav-link:hover {
-    color: #d4af37;
-  }
 }
 
 .site-header .navbar .nav-item .dropdown-menu {
@@ -180,6 +177,11 @@ a.nav-link {
     border-radius: 0px;
   }
 }
+
+.site-header .nav-item a:hover {
+  color: #d69e42;
+}
+
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
@@ -261,7 +263,7 @@ a.nav-link {
   font-size: 1.125rem;
   font-weight: bold;
   font-family: 'Poppins';
-  color: #d4af37;
+  color: #d69e42;
 }
 
 .navbar .nav-modules .nav-item-social-nav:not(:last-child) {
@@ -359,12 +361,14 @@ a.nav-link {
   font-weight: 500;
 }
 
-.site-footer .footer-widgets .footer-widget a {
-  color: #555c62;
+.site-footer .footer-widgets .footer-widget a:active {
+  color: #d4af37;
 }
-
+.site-footer .footer-widgets .footer-widget a {
+  color: #ffffff;
+}
 .site-footer .footer-widgets .footer-widget a:hover {
-  color: #f06399;
+  color: #d69e42;
 }
 
 .site-footer .footer-bottom-area {
@@ -384,7 +388,15 @@ a.nav-link {
 }
 
 .site-footer .footer-bottom-area a:hover {
-  color: #f06399;
+<<<<<<< HEAD
+  color: #d69e42;
+=======
+
+  color: #d4af37;
+
+  background-color: #000;
+  
+>>>>>>> master
 }
 
 @media (min-width: 992px) {
@@ -408,6 +420,7 @@ a.nav-link {
 /*--------------------------------------------------------------
 # Posts
 --------------------------------------------------------------*/
+
 .blog-post .entry-media {
   margin-bottom: 0;
 }
@@ -427,7 +440,7 @@ a.nav-link {
 }
 
 .blog-post .entry-content-wrapper {
-  padding: 25px 0px;
+  padding: 35px 0px;
 }
 
 .blog-post .entry-content-wrapper .entry-title {
@@ -661,7 +674,7 @@ p.has-drop-cap:not(:focus):first-letter {
 }
 
 .property-block .property-item .content-price {
-  color: #d4af37;
+  color: #d69e42;
   font-size: 1.125rem;
   font-weight: bold;
   margin-bottom: 15px;
@@ -704,7 +717,7 @@ p.has-drop-cap:not(:focus):first-letter {
   font-size: 1rem;
   font-family: 'Poppins';
   font-weight: bold;
-  color: #d4af37;
+  color: #d69e42;
   margin-bottom: 20px;
 }
 
@@ -1716,11 +1729,11 @@ body.has-no-comments .comment-respond {
     linear,
     left top,
     left bottom,
-    color-stop(100%, #d4af37),
+    color-stop(100%, #d69e42),
     to(#000000)
   );
-  background: -webkit-linear-gradient(top, #d69e42 100%, #ffffff 100%);
-  background: linear-gradient(180deg, #d69e42 100%, #ffffff 100%);
+  background: -webkit-linear-gradient(top, #d89c44100%, #ffffff 100%);
+  background: linear-gradient(180deg, #d89c44100%, #ffffff 100%);
 }
 
 @media (min-width: 992px) {
@@ -1729,11 +1742,11 @@ body.has-no-comments .comment-respond {
       linear,
       left top,
       right top,
-      color-stop(70%, #d4af37),
+      color-stop(70%, #d69e42),
       color-stop(70%, #ffffff)
     );
-    background: -webkit-linear-gradient(left, #d69e42 70%, #ffffff 70%);
-    background: linear-gradient(90deg, #d69e42 70%, #ffffff 70%);
+    background: -webkit-linear-gradient(left, #d89c4470%, #ffffff 70%);
+    background: linear-gradient(90deg, #d89c4470%, #ffffff 70%);
   }
 }
 
@@ -2015,4 +2028,22 @@ body.has-no-comments .comment-respond {
 .iframe-video-icon a {
   color: #ffffff;
   font-size: 100px;
+}
+.contact-us-btn:hover{
+  background-color: #000000;
+  border: none;
+}
+.call-us-now-btn:hover{
+  background-color: #fff;
+  color: #000;
+}
+.call-us-now-btn{
+  background-color: #000000;
+  border: none ;
+}
+.footer-text-link a:hover{
+  color:  #e7bc5c;
+}
+.footer-text-link a:active{
+  color:  #e7bc5c;
 }
