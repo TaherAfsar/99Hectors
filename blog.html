@@ -25,6 +25,150 @@
   <link href="assets/css/magnific-popup.css" rel="stylesheet" />
 
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&amp;display=swap" />
+  <style>
+  .container{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .container .heading{
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: black;
+  
+  }
+  
+  .container .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    gap:20px;
+  }
+  
+  .container .box-container .box{
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0,0,0.2);
+    display: none;
+  }
+  .container .box-container .box:nth-child(1),
+  .container .box-container .box:nth-child(2),
+  .container .box-container .box:nth-child(3){
+    display: inline-block;
+  
+  
+  
+  }
+  
+  
+  
+  .container .box-container .box .image{
+    margin-bottom: 20px ;
+    overflow: hidden;
+    height: 200px;
+    border-radius: 5px;
+    
+    
+  }
+  
+  .container .box-container .box .image img{
+    height: 100%;
+    width: 80%;
+    object-fit: cover;
+  }
+  .container .box-container .box:hover .image img{
+    transform: scale(1.1);
+  }
+  .container .box-container .box .content h3{
+    font-size: 20px;
+    color: #334;
+  }
+  .container .box-container .box .content p{
+    font-size: 15px;
+    color: #777;
+    line-height: 15px 0;
+    padding: 15px 0;
+  }
+  
+  .container .box-container .box .content .btn{
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1 px solid #334;
+    color: #334;
+    font-size: 16px;
+  
+  } 
+  .container .box-container .box .content .btn:hover{
+    background-color: black;
+    border-color: black;
+    color: #e7bc5c;
+  }
+  .container .box-container .box .content .icons{
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e7bc5c;
+  }
+  .container .box-container .box .content .icons span{
+    font-size: 14px;
+    color: blackc;
+  }
+  .container .box-container .box .content .icons span i{
+    
+    color: black;
+    padding-right: 5px;
+  }
+  #load-more{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 13px 30px;
+    border: 1 px solid #334;
+    color: #334;
+    font-size: 16px;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  #load-more:hover{
+    background-color: black;
+    border-color: black;
+    color: #e7bc5c;
+  }
+  
+  @media (max-width:450px){
+  
+    .container .heading{
+        font-size: 25px;
+    }
+  
+    .container .box-container{
+        grid-template-columns: 1fr;
+    }
+  
+    .container .box-container .box .image{
+        height: 200px;
+    }
+    
+  
+    .container .box-container .box .content p{
+            font-size: 12px;
+  
+    }
+  
+    .container .box-container .box .content .icons span{
+        font-size: 12px;
+    }
+  
+  }
+  .read-more-text{
+    display: none;
+  }
+  .read-more-text--show{
+    display: inline;
+  }
+  </style>
 </head>
 
 <body>
@@ -286,82 +430,16 @@
           </div>
         </div>
       </div>
-      <script>
-        const parentContainer = document.querySelector('.box');
-
-        parentContainer.addEventListener('click', event=>{
-
-          const current = event.target;
-
-          const isBtn = current.className.includes('btn');
-          if(!isBtn) return;
-
-          const currentText = event.target.parentNode.querySelector('.btn');
-
-          currentText.classList.toggle('btn--show');
-
-          current.textContent =current.textContent.includes('Read more') ?
-          "Read less..." : "Read more";
-
-        })
-
-
-
-
-      </script>
+     
       
 
 
-      
-
-
-
-
-
-
-
-
-
-
-
-
+  
 
 
     </div>
     <div id="load-more"> Load more</div>
   </div>
-  <script>
-    let loadMoreBtn = document.querySelector('#load-more');
-    let currentItem = 3;
-
-    loadMoreBtn.onclick = () => {
-      let boxes = [...document.querySelectorAll('.container .box-container .box')];
-      for (var i = currentItem; i < currentItem + 3; i++) {
-        boxes[i].style.display = 'inline-block';
-      }
-      currentItem += 3;
-
-      if (currentItem >= boxes.length) {
-        loadMoreBtn.style.display = 'none';
-      }
-    }
-
-
-
-  </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
   <footer class="site-footer" style="color: #ffffff; background-color:#000000 ;">
     <div class="footer-widgets">
       <div class="container">
@@ -370,7 +448,7 @@
             <div class="footer-widget footer-widget-1">
               <h2 class="mb-4 text-ebony-clay"><img width="120" height="120" src="./assets/images/company logo.jpeg"
                   alt="99 Hectors" /></h2>
-              <p"="text-abbey pr-6">
+              <p class="text-abbey pr-6">
                 99 Hectors Is A Leading Property Provider. We Provide 1BHK 2BHK
                 3BHK 4BHK Flats All Over Mumbai And Navi Mumbai
                 </p>
@@ -454,6 +532,47 @@
     </div>
   </footer>
 
+  <script>
+   
+    const parentContainer = document.querySelector('.box');
+
+    parentContainer.addEventListener('click', event=>{
+
+      const current = event.target;
+
+      const isBtn = current.className.includes('btn');
+      if(!isBtn) return;
+
+      const currentText = event.target.parentNode.querySelector('.btn');
+
+      currentText.classList.toggle('btn--show');
+
+      current.textContent =current.textContent.includes('Read more') ?
+      "Read less..." : "Read more";
+
+    })
+
+
+
+
+  let loadMoreBtn = document.querySelector('#load-more');
+  let currentItem = 3;
+
+  loadMoreBtn.onclick = () => {
+    let boxes = [...document.querySelectorAll('.container .box-container .box')];
+    for (var i = currentItem; i < currentItem + 3; i++) {
+      boxes[i].style.display = 'inline-block';
+    }
+    currentItem += 3;
+
+    if (currentItem >= boxes.length) {
+      loadMoreBtn.style.display = 'none';
+    }
+  }
+
+
+
+</script>
 
   <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
   <script src="assets/js/jquery.min.js"></script>
@@ -481,159 +600,3 @@
 
 </html>
 
-<style>
-  *{
-  margin: 0;
-  padding: 0;
-  font-family: 'Times New Roman', Times, serif;
-  box-sizing: border-box;
-  outline: none; border: none;
-  text-decoration: none;
-  text-transform: capitalize;
-  transition: all .2s linear;
-  
-
-}
-.container{
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.container .heading{
-  font-size: 40px;
-  margin-bottom: 20px;
-  color: black;
-
-}
-
-.container .box-container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
-  gap:20px;
-}
-
-.container .box-container .box{
-  background-color: #ffffff;
-  padding: 20px;
-  border-radius: 5px;
-  box-shadow: 0 5px 10px rgba(0,0,0.2);
-  display: none;
-}
-.container .box-container .box:nth-child(1),
-.container .box-container .box:nth-child(2),
-.container .box-container .box:nth-child(3){
-  display: inline-block;
-
-
-
-}
-
-
-
-.container .box-container .box .image{
-  margin-bottom: 20px ;
-  overflow: hidden;
-  height: 200px;
-  border-radius: 5px;
-  
-  
-}
-
-.container .box-container .box .image img{
-  height: 100%;
-  width: 80%;
-  object-fit: cover;
-}
-.container .box-container .box:hover .image img{
-  transform: scale(1.1);
-}
-.container .box-container .box .content h3{
-  font-size: 20px;
-  color: #334;
-}
-.container .box-container .box .content p{
-  font-size: 15px;
-  color: #777;
-  line-height: 15px 0;
-  padding: 15px 0;
-}
-
-.container .box-container .box .content .btn{
-  display: inline-block;
-  padding: 10px 30px;
-  border: 1 px solid #334;
-  color: #334;
-  font-size: 16px;
-
-} 
-.container .box-container .box .content .btn:hover{
-  background-color: black;
-  border-color: black;
-  color: #e7bc5c;
-}
-.container .box-container .box .content .icons{
-  display: flex;
-  align-items:center;
-  justify-content: space-between;
-  margin-top: 20px;
-  padding-top: 15px;
-  border-top: 1px solid #e7bc5c;
-}
-.container .box-container .box .content .icons span{
-  font-size: 14px;
-  color: blackc;
-}
-.container .box-container .box .content .icons span i{
-  
-  color: black;
-  padding-right: 5px;
-}
-#load-more{
-  margin-top: 20px;
-  display: inline-block;
-  padding: 13px 30px;
-  border: 1 px solid #334;
-  color: #334;
-  font-size: 16px;
-  background-color: #ffffff;
-  cursor: pointer;
-}
-#load-more:hover{
-  background-color: black;
-  border-color: black;
-  color: #e7bc5c;
-}
-
-@media (max-width:450px){
-
-  .container .heading{
-      font-size: 25px;
-  }
-
-  .container .box-container{
-      grid-template-columns: 1fr;
-  }
-
-  .container .box-container .box .image{
-      height: 200px;
-  }
-  
-
-  .container .box-container .box .content p{
-          font-size: 12px;
-
-  }
-
-  .container .box-container .box .content .icons span{
-      font-size: 12px;
-  }
-
-}
-.read-more-text{
-  display: none;
-}
-.read-more-text--show{
-  display: inline;
-}
-</style>
