@@ -73,7 +73,12 @@ body {
   font-weight: 400;
   line-height: 1.7;
   color: #555c62;
-  background-color: #fff;
+  background-color: #f5f6f8;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -2477,7 +2482,7 @@ progress {
   font-weight: 400;
   line-height: 1.7;
   color: #000;
-  background-color: transparent;
+  background-color: #080808;
   background-clip: padding-box;
   border: 2px solid #e7bc5c;
   -webkit-appearance: none;
